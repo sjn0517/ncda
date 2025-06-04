@@ -1,0 +1,436 @@
+/* 消除网页下面的空白方法： */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 确保填满视口 */
+}
+/* 半透明背景层 */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    z-index: -1;
+    background-image: url(../images/649257d44c8e30c4110928390ac67ec.jpg);     
+    backdrop-filter: blur(30px);
+    background-color: #f8d170b5 ;
+    background-blend-mode: overlay; /* 可选模式：multiply, screen, overlay 等 */
+    background-size: cover;
+    background-repeat: 832px;
+}
+
+.top-1{
+    margin-top: 20px;
+    background-position: top;
+    background-image: url(../images/画册背景.png);
+    background-repeat: repeat-x;
+    background-size: 1280px 53px;
+    position: relative;
+}
+/* 定义字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url('../unload/font.ttf') format('truetype');
+    font-weight: 400;    /* 普通粗细 */
+    font-style: normal;
+    font-display: swap;   /* 优化加载体验 */
+}
+
+.title-1{
+    padding-top: 15px;
+    font-family: 'ziti';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 25px;
+    text-align: center;
+}
+/* 铜币串 */
+.back-botton a img{
+    width: 41px;
+    height: 117px;
+    position: relative;
+    left: 39px;
+    top: -47px;
+}
+.xh{
+    width:100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top:-106px;
+}
+
+.title{
+    width: 500px;
+    height: 120px;
+    position: absolute;
+    margin: auto;
+    position: relative; /* 新增 */
+    top: 20px; 
+}
+
+
+.title-2{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold; /* 标准加粗 */
+    text-decoration: underline solid #b9811b  5px;
+}
+.title-3{
+    margin: auto;
+    color:grey;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+.parent{
+    width:500px;
+    height:300px;
+    margin:auto;
+    overflow: hidden;
+    background-image: url(../images/xy背景.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; /* 新增 */
+}
+.parent img {
+    position: relative;
+    left:100px;
+    height: 213px;
+    width: 150px;
+    }
+            /* 调整悬停内容的位置 */
+.hover-content1 {
+    position: absolute;
+    top: 120px;  /* 根据需要调整 */
+    left: 450px;  /* 根据需要调整 */
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10; /* 确保在最上层 */
+    pointer-events: none; /* 禁止悬停内容与图片交互 */
+}
+.hover-content1 img{
+    position: relative;
+    left:0;
+    width: 300px;
+    height: 200px;
+}
+.hover-content3 {
+    position: absolute;
+    top: 120px; 
+    left: 470px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10; 
+    pointer-events: none; 
+}
+.hover-content3 img{
+    position: relative;
+    left:0;
+    width: 350px;
+    height: 200px;
+}
+.hover-content5 {
+    position: absolute;
+    top: 120px; 
+    left: 450px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10; 
+    pointer-events: none; 
+}
+.hover-content5 img{
+    position: relative;
+    left:0;
+    width: 300px;
+    height: 200px;
+}
+.hover-content7 {
+    position: absolute;
+    top: 120px; 
+    left: 450px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10; 
+    pointer-events: none; 
+}
+.hover-content7 img{
+    position: relative;
+    left:0;
+    width: 300px;
+    height: 200px;
+}
+
+
+.hover-content2 {
+    position: absolute;
+    top: 120px; 
+    right: 500px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    pointer-events: none; 
+}
+.hover-content2 img{
+    position: relative;
+    left:0;
+    width: 300px;
+    height: 200px;
+}
+.hover-content4 {
+    position: absolute;
+    top: 120px; 
+    right: 500px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    pointer-events: none; 
+}
+.hover-content4 img{
+    position: relative;
+    left:0;
+    width: 300px;
+    height: 200px;
+}
+.hover-content6 {
+    position: absolute;
+    top: 120px; 
+    right: 560px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    pointer-events: none; 
+}
+.hover-content6 img{
+    position: relative;
+    left:0;
+    width: 400px;
+    height: 200px;
+}
+.hover-content8 {
+    position: absolute;
+    top: 125px; 
+    right: 500px; 
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    pointer-events: none; 
+}
+.hover-content8 img{
+    position: relative;
+    left:0;
+    width: 350px;
+    height: 180px;
+}
+
+
+.actor{
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    top:200px;
+    left: 0;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold; /* 标准加粗 */
+    cursor: pointer;/* 添加指针样式，表示可点击 */
+    
+}
+
+
+.action{
+    width:100%;
+    height: 120px;
+    margin:auto;
+    overflow: hidden;
+    
+}
+.action-1{
+    margin: 10px auto;
+    color:grey;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    display: none;
+    
+}
+.action-2{
+    color:grey;
+    font-size: 16px;
+    text-align:right;
+    right: 50px;
+    position: relative; /* 新增 */
+    right: 50px;
+    display: none;
+}
+.action-1+.action-2{
+    margin-top: 0%;
+}
+
+.container {
+        position: relative;
+        padding: 5px;
+}
+
+.dashed-separator {
+    height: 4px; /* 虚线的高度 */
+    background-image: linear-gradient(to right, #ac7510 50%, transparent 50%);
+    background-size: 40px 100%; /* 控制虚线的密度，20px为一段虚线加间隔的总宽度 */
+    margin: 10px auto;
+    width: 90%; /* 可调整宽度 */
+}
+button {
+    background-color: transparent; /* 按钮背景色 */
+    border: none;
+    position: absolute;
+    padding: 40px 40px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #f1e39d; /* 悬停时的按钮颜色 */
+}
+#prev-btn{
+    left: 150px;
+    top:200px
+}
+#next-btn{
+    right: 150px;
+    top:200px;
+}
+
+/* 自定义箭头 */
+#prev-btn::before,
+#next-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-top: 10px solid #decda2;
+    border-left: 10px solid #decda2;
+    transform: translate(-50%, -50%) rotate(-45deg); /* 调整旋转角度 */
+}
+/* 调整下一个按钮的箭头方向 */
+#next-btn::before {
+    transform: translate(-50%, -50%) rotate(135deg); /* 调整旋转角度 */
+}
+
+.box{
+    width:100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin:auto;
+    top:-130px;
+}
+
+.nps1{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    top:150px;
+    left:50px;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold; /* 标准加粗 */
+    text-decoration: underline solid #b9811b 5px;
+    text-shadow: 2px 4px 10px rgba(214, 169, 22, 0.612); 
+}
+.nps{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    top:150px;
+    left:50px;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold; /* 标准加粗 */
+    text-decoration: underline solid #b9811b 5px;
+}
+
+
+.jn{
+    width:300px;
+    height: 400px;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    transition: left 0.5s ease-in-out;
+}
+.jn img {
+    position: relative;
+    left:50px;
+    height: 150px;
+    width: 100px;
+    }
+.ah{
+    width:300px;
+    height: 400px;
+    position: absolute;
+    left: 500px;
+    top: 0;
+    transition: left 0.5s ease-in-out;
+}
+.ah img {
+    position: relative;
+    left:50px;
+    height: 150px;
+    width: 100px;
+    }
+    .jl{
+    width:300px;
+    height: 400px;
+    position: absolute;
+    right:500px;
+    top: 0;
+    transition: left 0.5s ease-in-out;
+}
+.jl img {
+    position: relative;
+    left:50px;
+    height: 150px;
+    width: 100px;
+    }
+.sc{
+    width:300px;
+    height: 400px;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    transition: left 0.5s ease-in-out;
+}
+.sc img {
+    position: relative;
+    left:50px;
+    height: 150px;
+    width: 100px;
+    }

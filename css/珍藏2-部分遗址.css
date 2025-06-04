@@ -1,0 +1,100 @@
+/* 消除网页下面的空白方法： */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 确保填满视口 */
+}
+/* 半透明背景层 */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/649257d44c8e30c4110928390ac67ec.jpg);     
+    backdrop-filter: blur(30px);
+    background-color: #f8d170b5 ;
+    background-blend-mode: overlay; /* 可选模式：multiply, screen, overlay 等 */
+    background-size: cover;
+    background-repeat: 832px;
+}
+
+.top-1{
+    margin-top: 20px;
+    background-position: top;
+    background-image: url(../images/画册背景.png);
+    background-repeat: repeat-x;
+    background-size: 1280px 53px;
+    position: relative;
+}
+/* 定义字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url('../unload/font.ttf') format('truetype');
+    font-weight: 400;    /* 普通粗细 */
+    font-style: normal;
+    font-display: swap;   /* 优化加载体验 */
+}
+
+.title-1{
+    padding-top: 15px;
+    font-family: 'ziti';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 25px;
+    text-align: center;
+}
+/* 铜币串 */
+.back-botton a img{
+    width: 41px;
+    height: 117px;
+    position: relative;
+    left: 39px;
+    top: -47px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:0 150px;
+    max-width: 1600px;
+    margin: 15px auto;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: -80px;
+}
+
+.box {
+    width:233px;
+    height: 178px;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 195px;
+}
+
+.box img {
+    width: 205px;
+    height: 153px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.bt {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: -40px;
+}
+
+.nr {
+    color: grey;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .box-container {
+    grid-template-columns: 1fr;
+    }
+}

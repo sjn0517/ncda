@@ -1,0 +1,91 @@
+/* 半透明背景层 */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/649257d44c8e30c4110928390ac67ec.jpg);     
+    backdrop-filter: blur(30px);
+    background-color: #f8d170b5  ;
+    background-blend-mode: overlay; /* 可选模式：multiply, screen, overlay 等 */
+    background-size: cover;
+    background-repeat: 832px;
+}
+/* 导航栏 */
+.nav-container {
+    width: 100%;
+    height: 79px;
+    background-color :#e1c89b;
+    padding: 15px 0;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* 定义字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url('../unload/font.ttf') format('truetype');
+    font-weight: 400;    /* 普通粗细 */
+    font-style: normal;
+    font-display: swap;   /* 优化加载体验 */
+}
+
+
+.nav-item {
+    margin: 0 25px;
+    position: relative;
+    /* 点击时有阴影 */
+    cursor: pointer;
+    transition: text-shadow 0.3s; /* 平滑过渡 */
+}
+.nav-item.active {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+/* 点击后保持效果 */
+.nav-item.active {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-family:'ziti' ;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+
+/* 内容 */
+.box{
+    width: 700px;
+    height: 415px;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    margin: 65px 550px;
+    
+}
+.box ul li img{
+    width: 138px;
+    height: 415px;
+    background-size: contain;
+}
+.box ul li {
+    float: left;
+}
+
+.under{
+    width: 1066px;
+    height: 311px;
+    background-repeat: no-repeat;
+    background-image: url(../images/天秤.png);
+    background-size: contain;
+    margin:-120px 308px;
+}

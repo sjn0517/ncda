@@ -1,0 +1,212 @@
+/* 保证网页下方不出现白色 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 确保填满视口 */
+}
+/* 半透明背景层 */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/649257d44c8e30c4110928390ac67ec.jpg);     
+    backdrop-filter: blur(30px);
+    background-color: #f8d170b5 ;
+    background-blend-mode: overlay; /* 可选模式：multiply, screen, overlay 等 */
+    background-size: cover;
+    background-repeat: 832px;
+}
+/* 导航栏 */
+.nav-container {
+    width: 100%;
+    height: 80px;
+    background-color: #e1c89b;
+    padding: 15px 0;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* 定义字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url('../unload/font.ttf') format('truetype');
+    font-weight: 400;    /* 普通粗细 */
+    font-style: normal;
+    font-display: swap;   /* 优化加载体验 */
+}
+
+
+.nav-item {
+    margin: 0 25px;
+    position: relative;
+    /* 点击时有阴影 */
+    cursor: pointer;
+    transition: text-shadow 0.3s; /* 平滑过渡 */
+}
+.nav-item.active {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+/* 点击后保持效果 */
+.nav-item.active {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-family:'ziti' ;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+
+.map{
+    width: 700px;
+    height: 734px;
+    background-image: url(../images/前1300-前771.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 21px;
+    left: 17px;
+}
+
+.year1{
+    width: 55px;
+    height: 17px;
+    position: relative;
+    left: 330px;
+    top: -684px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.year2{
+    width: 130px;
+    height: 17px;
+    position: relative;
+    left: 543px;
+    top: -583px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.year3{
+    width: 200px;
+    height: 17px;
+    position: relative;
+    left: 644px;
+    top: -412px;
+    font-weight: 900;
+    font-size: 14px;
+    color: #000000;
+}
+.year4{
+    width: 100px;
+    height: 17px;
+    position: relative;
+    left: 539px;
+    top: -198px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.year5{
+    width: 100px;
+    height: 17px;
+    position: relative;
+    left: 315px;
+    top: -111px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.title{
+    width: 202px;
+    height: 40px;
+    font-family: 'ziti';
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    left: 1100px;
+    top: -688px;
+}
+.word{
+    width: 300px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black 60%;
+    line-height: 1.5;
+    position: relative;
+    left: 1059px;
+    top: -648px;
+}
+.fir{
+    width: 48px;
+    height: 22px;
+    font-family: 'ziti';
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    left: 1106px;
+    top: -591px;
+}
+.sec{
+    width: 48px;
+    height: 22px;
+    font-family: 'ziti';
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    left: 1264px;
+    top: -613px;
+}
+.box1{
+    width: 122px;
+    height: 51px;
+    background-image:url(../images/框框.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 1068px;
+    top: -648px;
+}
+.box2{
+    width: 122px;
+    height: 51px;
+    background-image:url(../images/框框.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 1226px;
+    top: -699px;
+}
+.back-botton a img{
+    width: 102px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 1160px;
+    top: -620px;
+}
+.b{
+    width: 96px;
+    height: 34px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    left: 1060px;
+    top: -570px;
+}

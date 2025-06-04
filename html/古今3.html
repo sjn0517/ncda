@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古今</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/古今3.css">
+</head>
+<body>
+    <!-- 半透明背景层 -->
+    <div class="background-overlay"></div>
+    <!-- 顶部内容 -->
+     <div class="top">
+        <div class="title">古今</div>
+            <!-- 铜币串 -->
+            <div class="back-botton">
+                <a href="演变2-1index.html"><img src="../images/铜币串.png" alt=""></a>
+            </div>
+     </div>
+
+     <div class="title">这里是...北宋东京？</div>
+
+     <div class="left">
+        <img src="../images/左上角-人.png" alt="" class="person">
+        <img src="../images/左上角-气泡.png" alt="" class="qipao">
+        <img src="../images/左上角-底.png" alt="" class="di">
+
+        <div class="item-selector">
+                <div class="left-box" data-target="wheat">
+                    <img src="../images/小麦.png" alt="小麦" class="mai">
+                </div>
+                <div class="left-box" data-target="tea">
+                    <img src="../images/茶杯.png" alt="茶杯" class="bei">
+                </div>
+                <div class="left-box" data-target="fan">
+                    <img src="../images/折扇.png" alt="折扇" class="shan">
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="right-box">
+            <div class="vs-container">
+                <img id="wheat" class="right-image active" src="../images/右上角-小麦.png" alt="小麦对比">
+                <img id="tea" class="right-image" src="../images/右上角-茶杯.png" alt="茶杯对比">
+                <img id="fan" class="right-image" src="../images/右上角-扇子.png" alt="折扇对比">
+            </div>
+    </div>
+     
+
+     <div class="word">
+        <div>宋·天圣元年腊月甲申    雪</div>
+        <div>我将兜里唯一的十块钱摸出来交给掌柜，质库掌柜捏着十元纸币嗤笑：“花纸作画倒精细，抵十文罢！”攥着铜钱出门，卖炊饼的汉子嘀咕：“两文够买三个胡饼咧。”</div>
+     </div>
+
+     <!-- 情景演绎 -->
+      <div class="title1">
+            <span><img src="../images/小扇子.png" alt=""></span>
+            <span>情景演绎</span>
+            <span><img src="../images/小扇子.png" alt=""></span>
+        </div>
+        <div class="talk">
+            <div class="image-item">
+                <img src="../images/气泡正.png" alt="">
+                <div class="caption">师傅，麻烦把我拉到前面的酒馆，谢谢！</div>
+            </div>
+            <div class="image-item">
+                <img src="../images/气泡正.png" alt="">
+                <div class="caption">哇~猪肉！猪肉咋卖啊老板？</div>
+            </div>
+            <div class="image-item">
+                <img src="../images/气泡正.png" alt="">
+                <div class="caption">这衣服好好看，只是这料子有点粗糙。</div>
+            </div>
+            <div class="image-item">
+                <img src="../images/气泡正.png" alt="">
+                <div class="caption">老板！一碗茶几文啊？</div>
+            </div>
+
+        </div>
+
+        <div class="yuan">
+                <img src="../images/清明轿子 1.png" alt="">
+                <img src="../images/清明-卖肉 1.png" alt="">
+                <img src="../images/清明卖货 1.png" alt="">
+                <img src="../images/清明算命 1.png" alt="">
+
+        </div>
+
+        <div class="talk">
+            <div class="image-item">
+                <img src="../images/气泡反.png" alt="">
+                <div class="caption">好嘞姑娘！二里路，收您八文好了。</div>
+            </div>
+            <div class="image-item">
+                <img src="../images/气泡反.png" alt="">
+                <div class="caption">哈哈一斤三十文，姑娘您要买几斤！</div>
+            </div>
+            <div class="image-item">
+                <img src="../images/气泡反.png" alt="">
+                <div class="caption">姑娘您看的是布衣！一百文就成！</div>
+            </div>
+            <div class="image-item">
+                <img src="../images/气泡反.png" alt="">
+                <div class="caption">一文！姑娘您来歇歇脚啊！</div>
+            </div>
+
+        </div>
+
+        <div class="word">
+            <div>宋·天圣元年腊月乙酉 阴</div>
+            <div>拉车五文、肥膘二十文、罗纱一贯……茶摊老翁推来粗陶碗：“煎茶一盏，一文足矣。”铜钱叮当落案，汴水倒映着茶汤浮沫。</div>
+        </div>
+
+     <!-- 价目表 -->
+     <div class="title1">
+            <span><img src="../images/小扇子.png" alt=""></span>
+            <span>价目表<span>
+            <span><img src="../images/小扇子.png" alt=""></span>
+        </div>
+    <div class="jiamu"><img src="../images/价目表.png" alt=""></div>
+
+    <div class="word">
+            <div>宋·天圣元年腊月丙戌 晴</div>
+            <div>虹桥脚店的木勺酒香、瓦舍嘌唱的俚调、巷口妇人舂米的闷响，市井如蛛网交织。原来盛世不过是一日生计，皆系在炊烟与铜锈里。</div>
+        </div>
+</body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+            // 获取所有左边盒子
+            const leftBoxes = document.querySelectorAll('.left-box');
+            // 获取所有右边图片
+            const rightImages = document.querySelectorAll('.right-image');
+            
+            // 为每个左边盒子添加点击事件
+            leftBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    // 获取data-target属性值
+                    const target = this.getAttribute('data-target');
+                    
+                    // 移除所有图片的active类
+                    rightImages.forEach(img => {
+                        img.classList.remove('active');
+                    });
+                    
+                    // 给对应的图片添加active类
+                    document.getElementById(target).classList.add('active');
+                    
+                    // 可选：添加选中效果
+                    leftBoxes.forEach(b => b.style.border = 'none');
+                    this.style.border = '2px solid #8B4513';
+                });
+            });
+            
+            // 默认显示第一张图片
+            document.querySelector('.left-box[data-target="wheat"]').click();
+        });
+</script> 

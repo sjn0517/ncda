@@ -1,0 +1,246 @@
+/* 半透明背景层 */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/649257d44c8e30c4110928390ac67ec.jpg);     
+    backdrop-filter: blur(30px);
+    background-color: #f8d170b5 ;
+    background-blend-mode: overlay; /* 可选模式：multiply, screen, overlay 等 */
+    background-size: cover;
+    background-repeat: 832px;
+    background-attachment: fixed;
+}
+/* 导航栏 */
+.nav-container {
+    width: 100%;
+    height: 79px;
+    background-color: #e1c89b;
+    padding: 15px 0;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* 定义字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url('../unload/font.ttf') format('truetype');
+    font-weight: 400;    /* 普通粗细 */
+    font-style: normal;
+    font-display: swap;   /* 优化加载体验 */
+}
+
+
+.nav-item {
+    margin: 0 25px;
+    position: relative;
+    /* 点击时有阴影 */
+    cursor: pointer;
+    transition: text-shadow 0.3s; /* 平滑过渡 */
+}
+
+/* 点击后保持效果 */
+.nav-item.active {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-family:'ziti' ;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+/* 正文 */
+.parent{
+    width:700px;
+    height: 500px;
+    margin: auto;
+    background-image: url(../images/第一页.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative; /* 新增 */
+    top: 30px; /* 向下移动 50px */
+}  
+.parent img{
+    width: 449px;
+    height: 187px;
+    display: block;
+    margin:160px 103px;
+    overflow: hidden;
+}
+
+.nav-container +.parent{
+    margin-top: 0%; /* 修改此处，将顶部边距设置为0 */
+}
+
+
+
+.bottom {
+    width: 1280px;
+    height: 172.04px;
+    margin: 600px auto;
+    overflow: hidden;
+    background-image: url(../tp/画册背景.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed; /* 修改为 fixed */
+    top: 50px; /* 相对于视口顶部的位置 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+}
+.bottom ul li img {
+    height: 172.04px;
+    width: 256px;
+}
+.bottom ul {
+    display: flex;
+    width: max-content; /* 根据内容自动扩展宽度 */
+    animation: move 25s linear infinite;  /* 设置动画效果：move，持续时间为10秒，线性过渡，无限循环播放 */
+    padding: 0;
+    margin: 0;
+}
+/* 图片列表项样式，使图像以水平方向浮动排列 */
+.bottom ul li {
+    list-style: none;
+    flex: 0 0 256px; /* 固定每张图片的宽度 */
+}
+@keyframes move {
+    to {
+    /* 图片列表项向左平移1202px，实现走马灯效果 */
+    transform: translateX(-50%);
+    }
+}
+
+/* 鼠标悬停时暂停动画 */
+.bottom:hover ul {
+    animation-play-state: paused;
+    }
+.parent +.bottom{
+    margin-top: 0%;
+}
+
+.wz1{
+    width:350px;
+    height: 69px;
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* 添加内边距 */
+    box-sizing: border-box; /* 确保边框和内边距包含在尺寸内 */
+    background-color: transparent; /* 设置背景为透明 */
+}
+
+.wz2{
+    width:350px;
+    height: 69px;
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+    background-color: transparent; 
+    }
+
+.wz3{
+    width:350px;
+    height: 69px;
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+    background-color: transparent; 
+}
+
+.wz4{
+    width:350px;
+    height: 69px;
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+    background-color: transparent; 
+}
+
+.wz5{
+    width:350px;
+    height: 69px;
+    position: absolute;
+    top: 350px;
+    left: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent; 
+}
+
+.wz6{
+    width:350px;
+    height: 69px;
+    position: absolute;
+    top: 550px;
+    left: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* 添加内边距 */
+    box-sizing: border-box; 
+    background-color: transparent; 
+}
+
+.wz {
+    color: #808080; 
+    font-size: 16px; 
+    line-height: 2; /* 可选：设置行高改善可读性 */
+}
+
+.blink-box1 {
+    animation: blink 3s infinite;
+}
+.blink-box2 {
+    animation: blink 3.5s infinite;
+}
+.blink-box3 {
+    animation: blink 2.8s infinite;
+}
+.blink-box4 {
+    animation: blink 5s infinite;
+}.blink-box5 {
+    animation: blink 2.5s infinite;
+}
+.blink-box6 {
+    animation: blink 4s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; } /* 或改用 background-color 变色 */
+}

@@ -1,0 +1,31 @@
+/* 全局样式 */
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style:none;
+        
+    }
+a {
+  text-decoration: none;
+}
+/* 响应式 */
+/* 默认样式（移动优先） */
+.container {
+  padding: 10px;
+}
+
+/* 平板（≥768px） */
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* 桌面（≥1024px） */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
